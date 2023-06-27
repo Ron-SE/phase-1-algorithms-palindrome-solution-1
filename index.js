@@ -1,6 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+    let original = word.split("")
+    let copy = [...original]
+    rev = copy.reverse()
+    console.log(rev)
+    if(original.join() === rev.join()){
+        return true
+    }
+    else{
+        return false
+    }
 }
+
+
 
 /* 
   Add your pseudocode here
